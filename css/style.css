@@ -7,32 +7,67 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-image: url(../media/images/Fondo-web.jpg);
+    background-size: 15%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 0.75fr 2.5fr 0.75fr;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: "header header header"
+                            "main main main"
+                            "footer footer footer";
 }
 
 header {
-    width: 100vw;
     height: 17vh;
-    background-color: rgb(255, 0, 0);
+    background-image: linear-gradient(to bottom, rgba(0,43,228,1) 0%, rgba(55,9,121,1) 43%, rgba(189,4,117,1) 61%, rgba(255,0,0,1) 100%);
+    position: relative;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1.25fr 3fr 1.25fr;
+    grid-template-rows: 1.75fr 1.25fr;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "logo cont-search cont-car-log"
+        ". lb-head2 .";
 
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
+    height: 90vh;
+    grid-area: main;
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.25fr 1.5fr 1.5fr 1.25fr;
+    grid-template-rows: 1.5fr 1.75fr 1.75fr;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "carrou carrou carrou carrou"
+        ". box-sect1 box-sect2 ."
+        ". box-sect3 box-sect4 ." ;
+        gap: 5px 5px;
 }
 
 footer {
-    width: 100vw;
-    height: 25vh;
+    height: 22vh;
+    grid-area: footer;
+    position: relative;
     background-color: rgb(255, 0, 0);
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 2fr 1fr;
     grid-template-areas:
         "lbmenu-foot logo-foot ."
-        "lb-subfoot lb-subfoot lb-subfoot ";
+        "lbmenu-foot . lb-subfoot ";
     align-content: stretch;
-    align-items: end;
+    align-items: center;
     justify-items: stretch;
 }
 
@@ -42,21 +77,16 @@ input {
     border-radius: 5px;
 }
 
-
 ul {
     list-style-type: none;
 }
-
 
 a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    background-color: none;
-    padding: 0px 0px 0px 3px;
     position: relative;
 }
-
 
 div ul li {
     position: relative;
@@ -71,17 +101,6 @@ h2 {
 
 /* INDEX */
 
-.lb-head {
-    height: 75%;
-    width: 100%;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-}
 
 .lb-head2 {
     height: 25%;
@@ -89,6 +108,7 @@ h2 {
     padding: 5px;
     display: flex;
     flex-direction: row;
+    grid-area: lb-head2;
 }
 
 .contenedor {
@@ -99,17 +119,21 @@ h2 {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+    grid-area: cont-search;
 }
 
 .cont-car-log {
-    width: 100px;
+    width: 40%;
     height: 50px;
+    position: relative;
+    left: 20%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+    grid-area: cont-car-log;
 }
 
 .contenedor-carrito {
@@ -149,6 +173,7 @@ h2 {
 .logo {
     width: 240px;
     padding: 5px 0px 0px 5px;
+    grid-area: logo;
 }
 
 .lbmenu-bar {
@@ -169,10 +194,23 @@ h2 {
     border-radius: 5px;
 }
 
-.logo-foot {
-    display: inline-block;
+.cont-logo-foot {
+    width: 730px ;
+    height: 90px ;
+    display: flex;
     position: relative;
+    text-align: center;
     grid-area: logo-foot;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo-foot {
+    width: 63%;
+    height: 72%;
 }
 
 .lbmenu-foot {
@@ -207,69 +245,78 @@ h2 {
     position: fixed;
     left: 95%;
     bottom: 50px;
+    
+}
 
+.go-up:hover {
+    transform: rotate(-45deg);
+    transition: transform 2s;
 }
 
 
-.fondo-web {
-    background-image: url(../media/images/Fondo-web.jpg);
-    background-size: 15%;
-}
 
-.main-box {
-    height: 80%;
-    text-align: center;
-    position: relative;
-}
 
 .main-box-sect1 {
-    position: absolute;
-    margin: 5px;
-    left: 30%;
-    top: 20%;
+    width: 51%;
+    height: 95%;
+    position: relative;
+    display: flex;
+    grid-area: box-sect1;
+    background-color:lightblue ;
+    align-items: center;
+    backface-visibility: hidden;
 }
 
 .main-box-sect2 {
-    position: absolute;
-    margin: 5px;
-    left: 50%;
-    top: 20%;
+    width: 51%;
+    height: 95%;
+    position: relative;
+    display: flex;
+    grid-area: box-sect2;
+    background-color:lightpink ;
+    align-items: center;
+    backface-visibility: hidden;
 }
 
 .main-box-sect3 {
-    position: absolute;
-    margin: 5px;
-    left: 30%;
-    top: 60%;
+    width: 51%;
+    height: 95%;
+    position: relative;
+    display: flex;
+    grid-area: box-sect3;
+    background-color:lightcyan ;
+    align-items: center;
+    backface-visibility: hidden;
 }
 
 .main-box-sect4 {
-    position: absolute;
-    margin: 5px;
-    left: 50%;
-    top: 60%;
+    width: 51%;
+    height: 95%; 
+    position: relative;
+    display: flex;
+    background-color:lightyellow ;
+    grid-area: box-sect4;
+    align-items: center;
+    backface-visibility: hidden;
 }
 
 .box-sect {
-    position: relative;
+    display: flex;
     width: 180px;
-    height: 180px;
-    border: 5px;
-    border-color: blue;
+    height: 180px ;
+    align-items: center;
+    perspective: 2500;
+    transition: 1s ease;
+}
+.box-sect:hover , .main-box-sect1:hover , .main-box-sect2:hover , .main-box-sect3:hover , .main-box-sect4:hover {
+    background-color: red;
+    transform: rotateY(180deg);
+    transition: all 1s 0.5s;
 }
 
-/* .carrousel {
-    width: 100%;
-    background-color:orange ;
-    text-align: center;
-    position: relative;
-    top: 5%;
-    height: 30%;
-} */
 
-.carrousel .grande {
-    width: 99%;
-    background-color: lightskyblue;
+.carrousel {
+    width: 100%;
     position: relative;
     top: 7px;
     height: 60px;
@@ -279,25 +326,17 @@ h2 {
     align-content: center;
     justify-content: center;
     align-items: center;
+    grid-area: carrou;
 }
 
 .carrousel-img {
     width: 85px;
     height: 45px;
-    margin: 0 2px 0 2px;
-    cursor: pointer;
+    margin: 0 3px 0 3px;
+    border: 2px solid skyblue;
+    border-radius: 5px;
 }
 
-/*
-/* .caja-mult-vid {
-
-} */
-/* .caja-multm-img {
-
-
-    align-items: center;
-
-}  */
 
 /* NUESTRA HISTORIA */
 
@@ -401,4 +440,260 @@ h2 {
     left: 2%;
     top: 15px;
     background-color: indianred;
+}
+
+/* DESK-VIEW */
+/* @media only screen and (max-width: 1200px) {
+    body {
+
+    }
+} */
+
+/* TABLET-VIEW */
+
+ @media only screen and (max-width: 768px) {
+    body {
+background-color: whitesmoke; }
+header {
+    display: grid;
+    grid-template-columns: 1.25fr 3fr 1.25fr;
+    grid-template-rows: 1.75fr 1.25fr;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "logo cont-search ."
+        " lb-head2 lb-head2 cont-car-log";
+
+}
+input { width: 80%;}
+.contenedor { width: 90%;}
+.logo {
+    width: 80%;
+    height: 60%;
+}
+.imain-box {
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "carrou carrou "
+        " box-sect1 box-sect2 "
+        " box-sect3 box-sect4 " ;
+        gap: 5px 5px;
+}
+.box-sect {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.footer { 
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "lbmenu-foot logo-foot ."
+        "lbmenu lb-subfoot lb-subfoot";
+}
+.lb-subfoot {
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    grid-area: lb-subfoot;
+}
+}
+
+/* MOBILE-VIEW */
+
+@media only screen and (max-width: 320px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: none;
+        background-size: none;
+        display: grid;
+        grid-template-rows: 2fr 6fr 2fr;
+    grid-template-columns: 0.75fr 2.5fr 0.75fr;
+    align-content: space-between;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    justify-items: end;
+    }
+    header {
+        height: 25vh;
+        display: grid;
+        grid-template-columns: 1.25fr 1.5fr 1.5fr 1.25fr;
+        grid-template-rows: 1.50fr 1.25fr 1.25fr;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas:
+            "logo cont-car-log cont-car-log cont-car-log"
+            "cont-search cont-search cont-search cont-search"
+            " lb-head2 lb-head2 lb-head2 lb-head2"
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50px;
+}
+.cont-car-log{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+.contenedor-carrito {
+    width: 30px;
+    height: 30px;
+}
+.contenedor-login {
+    width: 30px;
+    height: 30px;
+}
+.logo img {
+    width: 190px;
+    height: 40px;
+}
+.contenedor {
+    width: 250px;
+    height: 38px;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 55px;
+}
+.lb-head2 {
+    height: 25%;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    grid-area: lb-head2;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.lbmenu-bar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 81px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    left: 28px;
+}
+.lbmenu-bar a {
+    width: 90px;
+    margin: 1px;
+    bottom: 5px;
+}
+main {
+    margin: 20px 0 0 20px;
+}
+.carrousel {
+    width: 91%;
+    position: relative;
+    top: 25px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.main-box-sect1 {
+    width: 109%;
+    height: 70%;
+    justify-content: center;
+    top: 50px ;
+    right: 2px;
+}
+.main-box-sect2 {
+    width: 109%;
+    height: 70%;
+    justify-content: center;
+    top: 50px ;
+    left: 2px;
+}
+.main-box-sect3 {
+    width: 109%;
+    height: 70%;
+    justify-content: center;
+    right: 2px;
+}
+.main-box-sect4 {
+    width: 109%;
+    height: 70%;
+    justify-content: center;
+    left: 2px;
+}
+footer {
+    height: 22vh;
+    grid-area: footer;
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+    "lbmenu-foot logo-foot logo-foot"
+    "lbmenu-foot lb-subfoot lb-subfoot ";
+}
+.cont-logo-foot {
+    width: 160px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    grid-area: logo-foot;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+.go-up {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 50px;
+    left: 80% ;
+}
+
+/* TIENDA */
+.cont-product {
+    width: 100px;
+    height: 85px;
+    background-color: rgba(255, 0, 0, 0.616);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    margin-top: 3px;
+}
+.box-left {
+    position: relative;
+    left: 10%;
+}
+.box-right {
+    left: 50%;
+}
 }
