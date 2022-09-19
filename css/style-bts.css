@@ -1,0 +1,39 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#header {
+    height: 20vh;
+    background-color: red;
+    align-items: baseline;
+}
+#buscar {
+    height: 40px;
+}
+
+#carrito {
+    height: 50px;
+    margin-left: 5px;
+}
+
+#login {
+    height: 50px;
+}
+
+
+.navbar {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: white !important;
+} 
+
+.input-group {
+    width:50%;
+}
+
+.nav-link {
+    color: white !important;
+}

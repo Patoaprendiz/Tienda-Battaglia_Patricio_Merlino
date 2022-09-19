@@ -5,48 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Librería Battaglia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style-bts.css" />
+    <title>Librería Battaglia-BOOTSTRAP</title>
 </head>
 
 <body>
-    <header id="subir">
-        <div class="lb-head">
-            <div class="logo">
-                <img src="./media/images/logo-lib-battaglia.jpg" alt="LIBRERÍA BATTAGLIA" width="230px" height="60px">
+    <header class=" container-fluid" id="subir">
+        <div class="row" id="header">
+            <a class="col-4 h-50" href="./index.html"><img src="./media/images/logo-lib-battaglia.jpg"
+                    alt="LIBRERÍA BATTAGLIA" width="230px" height="70px"></a>
+            <div class="col-6 input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ingrese su búsqueda" aria-label="search"
+                    aria-describedby="búsqueda">
+                <div class="input-group-append">
+                    <button class="btn" type="button"><img src="./media/iconos/lupa.png" alt="Buscar"
+                            id="buscar"></button>
+                </div>
             </div>
-            <div class="contenedor">
-                <input name="txtSearch" type="search" class="form-control" placeholder="Ingrese su búsqueda..."
-                    autocomplete="off" value="">
-                <a href="./pages/tienda.html">
-                    <button class="btn-search">
-                    </button>
-                </a>
-            </div>
-            <div class="cont-car-log">
-            <div class="contenedor-carrito">
-                <a href="#"> </a>
 
+            <div class="col-2 h-50">
+                <a href="#"><img src="./media/iconos/carrito-de-compras.png" alt="Carrito" id="carrito"></a>
+                <a href="#"><img src="./media/iconos/acceso.png" alt="Ingreso" id="login"></a>
             </div>
-            <div class="contenedor-login">
-                <a href="#"> </a>
-            </div>
+
+            <nav class="navbar navbar-expand-lg bg-transparent h-50 ">
+                <div class=" collapse navbar-collapse justify-content-evenly">
+                    <a class=" nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class=" nav-link" href="./pages/nuestra-historia.html">Nuestra historia</a>
+                    <a class=" nav-link" href="./pages/tienda.html">Tienda</a>
+                    <a class=" nav-link" href="./pages/donde-nos-encontras.html">Veni a conocernos</a>
+                    <a class=" nav-link" href="./pages/contacto.html">Contactanos</a>
+
+                </div>
+            </nav>
         </div>
-        </div>
-        <nav class="lb-head2">
-            <div class="lbmenu-bar">
-
-                <a href="./index.html">Inicio</a>
-                <a href="./pages/nuestra-historia.html">Nuestra historia</a>
-                <a href="./pages/tienda.html">Tienda</a>
-                <a href="./pages/contacto.html">Contactanos</a>
-                <a href="./pages/donde-nos-encontras.html">¿Donde nos encontras?</a>
-
-            </div>
-            </div>
-        </nav>
     </header>
-    <main class="fondo-web">
+    <!-- <main class="fondo-web">
 
         <div class="carrousel">
 
@@ -73,11 +69,11 @@
             <div class="main-box-sect4"><a href="./pages/tienda.html"><img src="./media/images/AGENDAS.png" alt="" class="box-sect"></a>Agendas</div>
         </div>
 
-    </main>
-    <footer>
-        <div class="lbmenu-foot">
+    </main> -->
+    <footer class="container-fluid">
+        <div class="row">
 
-            <ul>
+            <ul class="col-3">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/nuestra-historia.html">Nuestra historia</a></li>
                 <li><a href="./pages/tienda.html">Tienda</a></li>
@@ -85,22 +81,31 @@
                 <li><a href="./pages/donde-nos-encontras.html">¿Donde nos encontras?</a></li>
             </ul>
         </div>
-        
-        <div class="logo-foot">
+
+        <div class="col-6">
             <img src="./media/images/logo-lib-battaglia.jpg" alt="LIBRERÍA BATTAGLIA" width="730px" height="90px">
         </div>
-       
-        <div class="lb-subfoot">
-                <img src="./media/iconos/instagram (2).png" alt="Instagram" class="lb-subfoot-img">
-                <img src="./media/iconos/facebook.png" alt="Facebook" class="lb-subfoot-img">
-                <img src="./media/iconos/email.png" alt="Mail" class="lb-subfoot-img">
-                <img src="./media/iconos/whatsapp.png" alt="Whatsapp" class="lb-subfoot-img">
-            
+
+        <div class="row">
+            <img src="./media/iconos/instagram (2).png" alt="Instagram" class="lb-subfoot-img">
+            <img src="./media/iconos/facebook.png" alt="Facebook" class="lb-subfoot-img">
+            <img src="./media/iconos/email.png" alt="Mail" class="lb-subfoot-img">
+            <img src="./media/iconos/whatsapp.png" alt="Whatsapp" class="lb-subfoot-img">
+
         </div>
         <div class="go-up">
-            <a href="#subir"><img src="./media/iconos/enviar-mensaje.png" alt="Ir arriba" width="100%" height="100%"> </a>
+            <a href="#subir"><img src="./media/iconos/enviar-mensaje.png" alt="Ir arriba" width="100%" height="100%">
+            </a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>
