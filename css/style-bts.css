@@ -9,6 +9,13 @@ body {
     background-color: red;
     align-items: baseline;
 }
+
+#footer {
+    height: 20vh;
+    background-color: red;
+    margin-top: 10px;
+}
+
 #buscar {
     height: 40px;
 }
@@ -21,19 +28,87 @@ body {
 #login {
     height: 50px;
 }
+#logo-foot {
+     width: 80%;
+     height: 85%;
+}
 
+#logo-insta {
+    height: 40px;
+}
+
+#logo-face {
+    height: 40px;
+}
+
+#logo-mail {
+    height: 40px;
+}
+
+#logo-whatsapp {
+    height: 40px;
+}
+
+#sub-foot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+}
+#go-up {
+    width: 50px;
+    height: 50px;
+}
 
 .navbar {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
     color: white !important;
-} 
+}
 
 .input-group {
-    width:50%;
+    width: 50%;
 }
 
 .nav-link {
     color: white !important;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-inner {
+    max-height: 20rem;
+}
+
+.box-sect {
+    max-width: 20rem;
+    margin: 5px 10px 5px 10px;
+}
+
+#footer > a >.nav-link {
+    margin: 0;
+    padding: 0;
+}
+#footer > div > .container {
+    position: relative;
+    bottom: 28px;
+}
+
+@media (max-width: 576px) {
+    #logo-head {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    div>.form-control , #buscar {
+        height: 30px;
+        justify-content: center;
+    }
+     .row {
+        justify-content: center !important;
+        
+    }
+    #footer > div > nav > {
+        flex-direction: row !important;
+    }
+    
 }
