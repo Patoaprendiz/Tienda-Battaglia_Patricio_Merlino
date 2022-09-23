@@ -16,17 +16,23 @@ body {
     margin-top: 10px;
 }
 
+#logo-head {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
 #buscar {
     height: 40px;
 }
 
 #carrito {
-    height: 50px;
+    height: 45px;
     margin-left: 5px;
 }
 
 #login {
-    height: 50px;
+    height: 45px;
+    margin-left: 5px;
 }
 #logo-foot {
      width: 80%;
@@ -60,6 +66,7 @@ body {
     height: 50px;
 }
 
+
 .navbar {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -68,6 +75,7 @@ body {
 
 .input-group {
     width: 50%;
+    align-items: center;
 }
 
 .nav-link {
@@ -76,14 +84,27 @@ body {
     margin: 0;
 }
 
+.carousel {
+    width: 37%;
+    margin: auto;
+}
+
 .carousel-inner {
     max-height: 20rem;
+}
+
+.card-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 
 .box-sect {
     max-width: 20rem;
     margin: 5px 10px 5px 10px;
 }
+
 
 #footer > a >.nav-link {
     margin: 0;
@@ -94,7 +115,7 @@ body {
     bottom: 28px;
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     #logo-head {
         text-align: center;
         margin-bottom: 5px;
@@ -111,4 +132,67 @@ body {
         flex-direction: row !important;
     }
     
+} */
+
+/* // Small devices (landscape phones, 576px ) */
+@media (max-width: 576px) { 
+    #logo-head {
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    div>.form-control , #buscar {
+        height: 30px;
+        justify-content: center;
+    }
+     .row {
+        justify-content: center !important;
+        
+    }
+    #foot-nav {
+        flex-direction: row ;
+        justify-content: center;
+        margin: auto;
+    }
+    #footer > div > nav {
+        flex-direction: row !important;
+    }
+    #footer > div > nav > a {
+        text-align: center;
+        margin: 2px;
+    }
+    #logo-foot {
+        width: 65%;
+     height: 65%;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    #foot-nav {
+        flex-direction: row ;
+        justify-content: center;
+    }
+    #footer > div > nav {
+        flex-direction: row !important;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    #foot-nav {
+        justify-content: start;
+    }
+    #footer {
+        height: 25vh;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+    #foot-nav {
+    justify-content: start;
+} 
 }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+/* @media (max-width: 1400px) { ... } */
