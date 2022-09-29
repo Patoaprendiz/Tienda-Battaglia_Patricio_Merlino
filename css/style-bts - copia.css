@@ -25,37 +25,38 @@ body {
 }
 
 #buscar {
-    height: 35px;
+    height: 40px;
 }
 
 #carrito {
-    height: 35px;
+    height: 45px;
     margin-left: 5px;
 }
 
 #login {
-    height: 35px;
+    height: 45px;
     margin-left: 5px;
 }
 
 #logo-foot {
-    object-fit: cover;
+    width: 80%;
+    height: 85%;
 }
 
 #logo-insta {
-    height: 35px;
+    height: 40px;
 }
 
 #logo-face {
-    height: 35px;
+    height: 40px;
 }
 
 #logo-mail {
-    height: 35px;
+    height: 40px;
 }
 
 #logo-whatsapp {
-    height: 35px;
+    height: 40px;
 }
 
 #sub-foot {
@@ -68,7 +69,6 @@ body {
 #go-up {
     width: 50px;
     height: 50px;
-    margin-bottom: 50px;
 }
 
 .card-index {
@@ -94,8 +94,8 @@ body {
 }
 
 .carousel {
+    width: 37%;
     margin: auto;
-    height: 475px;
 }
 
 .card-tienda {
@@ -106,7 +106,7 @@ body {
 .card-img-top {
     width: 80%;
     min-height: 390px;
-    max-height: 390px;
+    max-height: 391px;
 }
 
 .btn-tienda {
@@ -124,6 +124,20 @@ body {
 
 /* .carousel-inner {
     max-height: 20rem;
+} */
+
+/* .d-block {
+
+    width: 95% !important;
+
+    height: 525px;
+
+    -o-object-fit: cover;
+
+    object-fit: cover;
+
+    margin: auto;
+
 } */
 
 .card-sect {
@@ -196,7 +210,7 @@ body {
 /* // Small devices (landscape phones, 576px ) */
 @media (min-width: 576px) {
     #header {
-        height: 20vh;
+        height: 15vh;
     }
 
     #logo-head {
@@ -216,7 +230,7 @@ body {
     }
 
     #footer {
-        height: 13vh;
+        height: 12vh;
     }
 
     #foot-nav {
@@ -242,12 +256,9 @@ body {
     #sub-foot {
         margin-bottom: 5px;
     }
-    .carousel {
-        width: 100%;
-    }
 }
 
-@media (min-width: 576px) and (max-width: 1200px) {
+@media (min-width: 576px) and (max-width: 992px) {
     #cont-logo-foot {
         display: none !important;
     }
@@ -265,14 +276,11 @@ body {
     }
 
     #footer {
-        height: 13vh;
+        height: 12vh;
     }
 
     #header {
-        height: 20vh;
-    }
-    .carousel {
-        width: 100%;
+        height: 15vh;
     }
 }
 
@@ -280,14 +288,11 @@ body {
 @media (min-width: 992px) {
 
     #footer {
-        height: 13vh;
+        height: 11vh;
     }
 
     #header {
-        height: 19vh;
-    }
-    .carousel {
-        width: 60%;
+        height: 15vh;
     }
 }
 
@@ -298,21 +303,13 @@ body {
     }
 
     #header {
-        height: 19vh;
+        height: 15vh;
     }
-    #footer {
-        height: 13vh;
-    }
-
-    .carousel {
-        width: 60%;
-    }
-
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     #header {
-        height: 19vh;
+        height: 15vh;
     }
 }
