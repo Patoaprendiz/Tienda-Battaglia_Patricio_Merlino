@@ -1,0 +1,38 @@
+.card-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-tienda {
+        border: 4px dotted #f04d11;
+        background-color: #ffffff9c;
+
+        .card-img-top {
+            width: 80%;
+            min-height: 300px;
+            max-height: 300px;
+
+            &:hover {
+                transform: scale(1.5);
+                transition-delay: 0.25s;
+                transition-duration: 1s;
+            }
+        }
+
+        .text-card {
+            font-family: Verdana;
+            font-size: large;
+            // .card-text {
+
+            // }
+            .btn-tienda {
+                font-family: verdana;
+                color: #fff;
+                background-color: #f04d11;
+                border-color: #f04d11;
+                border-radius: 5px;
+            }
+        }
+    }
+}

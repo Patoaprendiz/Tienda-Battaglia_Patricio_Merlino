@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#header {
+    height: 20vh;
+    background-color: $color1_battaglia;
+    align-items: baseline;
+
+    #logo-head {
+        text-align: center;
+        margin-bottom: 2px;
+    }
+
+    .input-group {
+        width: 50%;
+        align-items: $item-center;
+    }
+
+    #carrito {
+        height: map-get($map:$icon_head, $key: alto);
+        margin-left: map-get($map:$icon_head, $key: m-Izq);
+
+        &:hover {
+            background-color: rgba(14, 14, 248, 0.578);
+            @include hover-static;
+        }
+    }
+
+    #login {
+        height: map-get($map:$icon_head, $key: alto);
+        margin-left: map-get($map:$icon_head, $key: m-Izq);
+
+        &:hover {
+            background-color: rgba(10, 234, 54, 0.578);
+            @include hover-static;
+        }
+    }
+    .nav-link {
+        color: white !important;
+        padding: 0;
+        margin: 5px;
+    
+        &:hover {
+            background-color: rgba(248, 238, 54, 0.648);
+            @include hover-static;
+        }
+    }
+
+}
+
+.navbar {
+    font-family: Verdana;
+    color: white !important;
+    z-index: 9;
+    border-radius: 7px;
+}
+
+#buscar {
+    height: map-get($map:$icon_head, $key: alto);
+    &:hover {
+        background-color: rgb(13 202 240);
+        @include hover-static;
+        }
+    }

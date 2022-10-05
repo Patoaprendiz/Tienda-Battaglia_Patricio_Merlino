@@ -1,0 +1,14 @@
+$color1_battaglia: red;
+$fuente_base: Verdana;
+$item-center: center;
+$icon_footer: 30px;
+
+$icon_head:("alto" : 35px,
+    "m-Izq" : 5px,
+);
+
+@mixin hover-static {
+    transition-delay: 0.10s;
+    transition-duration: 0.10s;
+    border-radius: 3px;
+}

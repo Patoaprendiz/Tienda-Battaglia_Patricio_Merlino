@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Librería Battaglia. Ubicada en el centro de Quilmes.Venta de artículos de librería, escolar, oficina, tecnología y artística">
+    <meta name="keywords" content="resma, autor,librería, tienda, Quilmes, escolar, oficina, artística, técnica, tecnología">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style-bts.css" />
-    <title>Librería Battaglia-BOOTSTRAP</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Librería Battaglia</title>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
             <a class="col-xxl-4 col-xl-4 col-lg-3 col-md-12 col-sm-12 h-50" id="logo-head" href="./index.html"><img
                     src="./media/images/logo-lib-battaglia.jpg" alt="LIBRERÍA BATTAGLIA" width="230px"
                     height="70px"></a>
-            <div class="col-xxl-6 col-xl-6 col-lg-4 col-md-3 col-sm-6 input-group mb-3">
+            <div class="col-xxl-6 col-xl-6 col-lg-4 col-md-3 col-sm-6 input-group">
                 <input type="text" class="form-control" placeholder="Ingrese su búsqueda" aria-label="search"
                     aria-describedby="búsqueda">
                 <div class="input-group-append">
@@ -26,39 +28,40 @@
                 </div>
             </div>
 
-            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-3 h-50">
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-3 h-25">
                 <a href="#"><img src="./media/iconos/carrito-de-compras.png" alt="Carrito" id="carrito"></a>
                 <a href="#"><img src="./media/iconos/acceso.png" alt="Ingreso" id="login"></a>
             </div>
-            <div class="conteiner col-xxl-12 col-xl-12 col-lg-12 col-md-2 col-sm-2 d-flex justify-content-center ">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse  me-2" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                                <li class="nav-item">
-                                    <a class=" nav-link dropdown-item" aria-current="page" href="#">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class=" nav-link dropdown-item" href="./pages/nuestra-historia.html">Nuestra
-                                        historia</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class=" nav-link dropdown-item" href="./pages/tienda.html">Tienda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class=" nav-link dropdown-item" href="./pages/donde-nos-encontras.html">Veni a
-                                        conocernos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class=" nav-link dropdown-item" href="./pages/contacto.html">Contactanos</a>
-                                </li>
-                            </ul>
-                        </div>
+
+            <!-- <<<<<<<NAVBAR HEADER>>>>>>>>>> -->
+
+            <div class="conteiner d-flex justify-content-center col-xxl-12 col-xl-12 col-lg-12 col-md-2 col-sm-2  h-25">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  me-1" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class=" nav-link " aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" nav-link " href="./pages/nuestra-historia.html">
+                                    Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" nav-link" href="./pages/tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" nav-link " href="./pages/donde-nos-encontras.html">
+                                    Conocenos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" nav-link " href="./pages/contacto.html">Contactanos</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -66,60 +69,65 @@
         </div>
     </header>
     <main class="container-fluid" id="main">
-            <section class="container-fluid">
-                <div id="carouselExampleSlidesOnly" class="carousel slide d-flex align-items-center" data-bs-ride="carousel">
-                    <div class="carousel-inner " id="carrousel">
-                        <div class="carousel-item  ">
-                            <img src="./media/images/LOGO-B-BATTAGLIA.png" class="d-block w-100" alt="..." width="300px"
-                                height="250px">
-                        </div>
-                        <div class="carousel-item active">
-                            <img src="./media/images/LOGO-AUTOR.jpg" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-ELMERS.jpg" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-EXITO.jpg" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-FABER.jpg" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-FW.jpg" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-GLORIA.jpg" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-GTC.png" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-LEDESM-NAT.jpg" class="d-block w-100" alt="..."
-                                height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-PARKER.JPG" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-PLANTEC.jpeg" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-STAEDTLER.png" class="d-block w-100" alt="..." height="250px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/images/LOGO-PARKER.JPG" class="d-block w-100" alt="..." height="250px">
-                        </div>
+
+        <!-- <<<<<<<CARROUSEL>>>>>>>>>> -->
+
+        <section class="container-fluid d-flex justify-content-center">
+            <div id="carouselExampleSlidesOnly" class="carousel slide d-flex align-items-center"
+                data-bs-ride="carousel">
+                <div class="carousel-inner " id="carrousel">
+                    <div class="carousel-item  ">
+                        <img src="./media/images/LOGO-B-BATTAGLIA.png" class="d-block w-100" alt="..." width="300px"
+                            height="250px">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./media/images/LOGO-AUTOR.jpg" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-ELMERS.jpg" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-EXITO.jpg" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-FABER.jpg" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-FW.jpg" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-GLORIA.jpg" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-GTC.png" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-LEDESM-NAT.jpg" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-PARKER.JPG" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-PLANTEC.jpeg" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-STAEDTLER.png" class="d-block w-100" alt="..." height="250px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/images/LOGO-PARKER.JPG" class="d-block w-100" alt="..." height="250px">
                     </div>
                 </div>
-            </section>
-        
+            </div>
+        </section>
+
+        <!-- <<<<<<<SECCIONES-TIENDA>>>>>>>>>> -->
+
         <section class="container justify-content-center ">
-            <div class="row justify-content-center">
-                <div class="card col-xl-5 col-lg-6 col-sm-8 text-bg-dark text-center card-index" id="">
-                    <img src="./media/images/ESCOLAR.jpg" class="card-img" alt="...">
+            <div class="row justify-content-center ">
+                <div class="card col-xl-5 col-lg-6 col-sm-8 text-bg-dark text-center card-index">
+                    <img src="./media/images/ESCOLAR (1).webp" class="card-img" alt="...">
                     <div class="card-img-overlay card-sect">
-                        <a href="./pages/tienda.html" class="btn btn-danger card-index">
+                        <a href="./pages/tienda.html" class="btn btn-index card-index">
                             <h2 class="card-title fw-bold">Escolar</h2>
                         </a>
                     </div>
@@ -127,7 +135,7 @@
                 <div class="card col-xl-5 col-lg-6 col-sm-8 text-bg-dark text-center card-index">
                     <img src="./media/images/COMERCIAL.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay card-sect">
-                        <a href="./pages/tienda.html" class="btn btn-danger card-index">
+                        <a href="./pages/tienda.html" class="btn btn-index card-index">
                             <h2 class="card-title fw-bold">Comercial</h2>
                         </a>
                     </div>
@@ -135,7 +143,7 @@
                 <div class="card col-xl-5 col-lg-6 col-sm-8 text-bg-dark text-center card-index">
                     <img src="./media/images/TECNOLOGIA.png" class="card-img" alt="...">
                     <div class="card-img-overlay card-sect">
-                        <a href="./pages/tienda.html" class="btn btn-danger card-index">
+                        <a href="./pages/tienda.html" class="btn btn-index card-index">
                             <h2 class="card-title fw-bold">Tecnología</h2>
                         </a>
                     </div>
@@ -143,7 +151,7 @@
                 <div class="card col-xl-5 col-lg-6 col-sm-8 text-bg-dark text-center card-index">
                     <img src="./media/images/AGENDAS.png" class="card-img" alt="...">
                     <div class="card-img-overlay card-sect">
-                        <a href="./pages/tienda.html" class="btn btn-danger card-index">
+                        <a href="./pages/tienda.html" class="btn btn-index card-index">
                             <h2 class="card-title fw-bold">Agendas</h2>
                         </a>
                     </div>
@@ -151,29 +159,54 @@
             </div>
         </section>
     </main>
-    <footer class="container-fluid">
-        <div class="row" id="footer">
-            <div class="container d-flex  m-0 col-xxl-4 col-xl-5 col-lg-6 col-md-12 col-sm-12 ">
-                <nav class="navbar flex-column navbar-expand-lg pt-1 bg-transparent h-75 " id="foot-nav">
+    <footer class="container-fluid" id="footer">
+        <div class="row">
 
-                    <a class=" nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                    <a class=" nav-link" href="./pages/nuestra-historia.html">Nuestra historia</a>
-                    <a class=" nav-link" href="./pages/tienda.html">Tienda</a>
-                    <a class=" nav-link" href="./pages/donde-nos-encontras.html">Veni a conocernos</a>
-                    <a class=" nav-link" href="./pages/contacto.html">Contactanos</a>
+            <!-- <<<<<<<NAVBAR FOOTER>>>>>>>>>> -->
 
+            <div
+                class="container d-flex justify-content-center  m-0 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 h-50">
+
+                <nav class="navbar navbar-expand">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./media/images/LOGO-B-BATTAGLIA.png" alt="Logo" width="30" height="24">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse  me-1" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class=" nav-link " aria-current="page" href="./index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class=" nav-link " href="./pages/nuestra-historia.html">
+                                        Historia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class=" nav-link" href="./pages/tienda.html">Tienda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class=" nav-link " href="./pages/donde-nos-encontras.html">
+                                        Conocenos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class=" nav-link " href="./pages/contacto.html">Contactanos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
-            <div class="container col-xxl-3 col-xl-5 col-lg-6 col-md-4 col-sm-6  d-flex justify-content-center h-100"
-                id="cont-logo-foot">
-                <img src="./media/images/logo-lib-battaglia.jpg" alt="LIBRERÍA BATTAGLIA" id="logo-foot">
-            </div>
 
-            <span class="container col-xxl-2 col-xl-2 col-lg-5 col-md-6 col-sm-4 " id="sub-foot">
-                <a href="#"><img src="./media/iconos/instagram (2).png" alt="Instagram" id="logo-insta"></a>
-                <a href="#"><img src="./media/iconos/facebook.png" alt="Facebook" id="logo-face"></a>
-                <a href="#"><img src="./media/iconos/email.png" alt="Mail" id="logo-mail"></a>
-                <a href="#"><img src="./media/iconos/whatsapp.png" alt="Whatsapp" id="logo-whatsapp"></a>
+            <span class="container col-xxl-12 col-xl-12 col-lg-15 col-md-12 col-sm-12 h-50" id="sub-foot">
+                <a href="#"><img src="./media/iconos/instagram (2).png" alt="Instagram" class="logo-insta"></a>
+                <a href="#"><img src="./media/iconos/facebook.png" alt="Facebook" class="logo-face"></a>
+                <a href="#"><img src="./media/iconos/email.png" alt="Mail" class="logo-mail"></a>
+                <a href="#"><img src="./media/iconos/whatsapp.png" alt="Whatsapp" class="logo-whatsapp"></a>
             </span>
         </div>
         <div class="position-fixed bottom-0 end-0 p-2" id="go-up">
