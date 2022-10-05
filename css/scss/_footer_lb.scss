@@ -1,0 +1,85 @@
+#footer {
+    height: 18vh;
+    background-color: $color1_battaglia;
+
+    .row {
+        
+        .navbar {
+            font-family: Verdana;
+            color: white !important;
+            border-radius: 7px;
+            margin-top: 5px;
+        }
+
+        #sub-foot {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            margin-top: 5px;
+        }
+
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white !important;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+        background-color: rgba(10, 2, 145, 0.648);
+        @include hover-static;
+    }
+}
+
+.logo-insta {
+    height: $icon_footer;
+    &:hover {
+        background-color: rgba(255, 166, 0, 0.74);
+        @include hover-static;
+    }
+}
+
+.logo-face {
+    height: $icon_footer;
+    &:hover {
+        @extend .logo-insta, :hover ;
+        background-color: rgba(21, 0, 255, 0.74);
+    }
+}
+
+.logo-mail {
+    height: $icon_footer;
+    &:hover {
+        @extend .logo-insta, :hover ;
+        background-color: rgba(255, 255, 255, 0.74) ;
+    }
+}
+
+.logo-whatsapp {
+    height: $icon_footer;
+    &:hover {
+        @extend .logo-insta, :hover ;
+        background-color: rgba(47, 180, 6, 0.74);
+    }
+}
+
+
+
+
+
+
+
+
+#go-up {
+    width: 50px;
+    height: 50px;
+}
+
+
+#go-up:hover {
+    transform: rotate(-45deg);
+    transition-delay: 0.20s;
+    transition-duration: 1s;
+}

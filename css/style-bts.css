@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -62,7 +68,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-    padding-bottom: 5px;
+    
 }
 
 #go-up {
@@ -77,9 +83,10 @@ body {
 }
 
 .navbar {
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     color: white !important;
+    z-index: 9;
+    border-radius: 7px;
 }
 
 .input-group {
@@ -105,8 +112,8 @@ body {
 
 .card-img-top {
     width: 80%;
-    min-height: 390px;
-    max-height: 390px;
+    min-height: 300px;
+    max-height: 300px;
 }
 
 .btn-tienda {
@@ -131,6 +138,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center
+}
+
+.btn-index {
+    color: #fff;
+    background-color: transparent;
+    border-color: #dc3545;
+}
+.btn-index:hover {
+    color: #fff;
+    background-color: red;
+    border-color: #dc3545;
 }
 
 .box-sect {
@@ -167,7 +185,8 @@ body {
 #logo-mail:hover,
 #buscar:hover,
 #carrito:hover,
-#login:hover {
+#login:hover,
+.nav-link:hover {
     background-color: rgba(255, 255, 255, 0.578);
     transition-delay: 0.10s;
     transition-duration: 0.10s;
@@ -245,6 +264,12 @@ body {
     .carousel {
         width: 100%;
     }
+   
+    .card-img-top {
+        min-height: 250px;
+        max-height: 250px;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 1200px) {
