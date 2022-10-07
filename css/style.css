@@ -144,6 +144,25 @@ body {
   font-size: large;
 }
 
+.btn-form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  font-family: Verdana;
+  background-color: red;
+  color: white;
+}
+.btn-form:hover {
+  background-color: white;
+  color: red;
+}
+
+.form-text-box {
+  height: 300px !important;
+}
+
 #footer {
   height: 18vh;
   background-color: red;

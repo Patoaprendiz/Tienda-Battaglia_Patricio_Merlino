@@ -1,0 +1,15 @@
+.btn-form {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana;
+    background-color: $color1_battaglia;
+    color:  white;
+    &:hover {
+        background-color: white;
+        color: $color1_battaglia;
+    }
+}
+.form-text-box {
+    height: 300px !important;
+}
