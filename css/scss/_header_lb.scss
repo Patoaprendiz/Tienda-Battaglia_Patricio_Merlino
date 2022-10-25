@@ -1,16 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-}
-
 #header {
     height: 20vh;
     background-color: $color1_battaglia;
@@ -31,7 +18,7 @@ body {
         margin-left: map-get($map:$icon_head, $key: m-Izq);
 
         &:hover {
-            background-color: rgba(14, 14, 248, 0.578);
+            background-color: rgba(193, 196, 253, 0.566);
             @include hover-static;
         }
     }
@@ -41,8 +28,9 @@ body {
         margin-left: map-get($map:$icon_head, $key: m-Izq);
 
         &:hover {
-            background-color: rgba(10, 234, 54, 0.578);
+            background-color: rgba(193, 196, 253, 0.566);
             @include hover-static;
+            border-radius: 11px;
         }
     }
     .nav-link {
@@ -51,7 +39,7 @@ body {
         margin: 5px;
     
         &:hover {
-            background-color: rgba(248, 238, 54, 0.648);
+            background-color: rgba(193, 196, 253, 0.566);
             @include hover-static;
         }
     }
@@ -68,7 +56,7 @@ body {
 #buscar {
     height: map-get($map:$icon_head, $key: alto);
     &:hover {
-        background-color: rgb(13 202 240);
+        background-color: rgba(193, 196, 253, 0.566);
         @include hover-static;
         }
     }

@@ -3,16 +3,19 @@
 @import "./_main_indx.scss";
 @import "./main_tienda";
 @import "./main_nuestra-historia";
+@import "./main_donde-nos-encontras";
 @import "./main_contacto";
 @import "./_footer_lb.scss";
+
 
 /* // Small devices (landscape phones, 576px ) */
 @media (min-width: 576px) {
     #header {
         height: 20vh;
     }
-    .navbar-collapse {
-        background-color: red;
+
+    .navbar-collapse-head {
+        background-color: rgba(244, 79, 79, 0.653);
         border-radius: 5px;
     }
 
@@ -30,12 +33,15 @@
 
     .carousel {
         width: 100%;
-        padding-right: 17px;
     }
-   
+
     .card-img-top {
         min-height: 250px;
         max-height: 250px;
+    }
+
+    .form-contact {
+        width: 400px;
     }
 
 }
@@ -52,7 +58,11 @@
 @media (min-width: 992px) {
 
     .carousel {
-        width: 60%;
+        width: 80%;
+    }
+
+    .navbar-collapse-head {
+        background-color: transparent;
     }
 }
 
@@ -61,12 +71,12 @@
 
 
     .carousel {
-        width: 60%;
+        width: 95%;
     }
 
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 // @media (min-width: 1400px) {
-   
+
 // }
