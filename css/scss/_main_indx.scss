@@ -1,5 +1,5 @@
 #main {
-    background: linear-gradient(354deg, rgba(255, 133, 133, 1) 0%, rgba(134, 137, 255, 1) 50%, rgba(255, 133, 133, 1) 100%);
+    background: linear-gradient(354deg, rgb(247, 53, 53) 1%, rgba(134, 137, 255, 1) 40%, rgb(247, 53, 53) 100%);
 
     section {
         div {
@@ -15,7 +15,14 @@
         .row {
             .card-index {
                 background-color: #ffffff82;
-                margin: 2px;
+                margin: 10px;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                }
 
                 .card-sect {
                     display: flex;
@@ -24,12 +31,14 @@
                     align-items: $item-center;
 
                     .btn-index {
+                        height: 46px;
                         color: #fff;
-                        background-color: transparent;
+                        background-color: $color1_battaglia;
                         border-color: $color1_battaglia;
 
                         &:hover {
-                            background-color: $color1_battaglia;
+                            color:rgba(134, 137, 255, 1);
+                            box-shadow: none;
                         }
                     }
                 }

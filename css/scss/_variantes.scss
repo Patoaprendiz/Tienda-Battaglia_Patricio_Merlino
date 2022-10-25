@@ -3,12 +3,29 @@ $fuente_base: Verdana;
 $item-center: center;
 $icon_footer: 30px;
 
-$icon_head:("alto" : 35px,
-    "m-Izq" : 5px,
+$icon_head:("alto" : 28px,
+    "m-Izq" : 2px,
 );
 
 @mixin hover-static {
     transition-delay: 0.10s;
     transition-duration: 0.10s;
     border-radius: 3px;
+}
+
+@mixin nav-tab-box {
+    font-family: Verdana;
+    font-style: italic;
+    color: white;
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+@mixin etiquetas-tab {
+    font-family: $fuente_base;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 5px;
+    padding-right: 2px;
 }

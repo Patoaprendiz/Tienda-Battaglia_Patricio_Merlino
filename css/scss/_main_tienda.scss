@@ -14,7 +14,7 @@
             max-height: 300px;
 
             &:hover {
-                transform: scale(1.5);
+                transform: scale(1.25);
                 transition-delay: 0.25s;
                 transition-duration: 1s;
             }
@@ -23,15 +23,19 @@
         .text-card {
             font-family: Verdana;
             font-size: large;
-            // .card-text {
-
-            // }
             .btn-tienda {
                 font-family: verdana;
+                font-size: large;
                 color: #fff;
                 background-color: #f04d11;
                 border-color: #f04d11;
                 border-radius: 5px;
+                &:hover {
+                    animation-name: tada;
+                    animation-delay: 0.25s;
+                    animation-duration: 1s;
+
+                }
             }
         }
     }
